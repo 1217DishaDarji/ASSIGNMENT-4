@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tourism Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="PIC-1.jpg" alt="Nepal">
+        <img src="PIC-2.jpg" alt="Bhutan">
+        <img src="PIC-3.jpg" alt="Bhutan">
+        <img src="PIC-4.jpg" alt="Kashmir">
+        <img src="PIC-5.jpg" alt="Ladakh">
+        <img src="PIC-6.jpg" alt="Udaipur">
+        <img src="PIC-7.jpg" alt="Jaipur">
+        <img src="PIC-8.jpg" alt="Dwarka">
+        <img src="PIC-9.jpg" alt="Kerala">
+        <img src="PIC-10.jpg" alt="Ladakh">
+    </div>
+
+</body>
+</html>
